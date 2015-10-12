@@ -11,7 +11,7 @@ The Spintax is a widely used format for text generation in the SEO world. Thus, 
 	# From string
 	color_spin = Spin("My favorite color is {red|green|blue}{.|!}")
 	# From file
-	color_spin = Spin("path/to/my/masterspin/file")
+	color_spin = Spin(input_file="path/to/my/masterspin/file")
 	
 	color_spin.unspun()
 And the possible results are:

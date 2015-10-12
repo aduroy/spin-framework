@@ -5,6 +5,8 @@ The Spintax is a widely used format for text generation in the SEO world. Thus, 
 - Python 2.7+
 
 ## Code samples
+
+### Basic content spinning
 	from spin import Spin
 	# From string
 	color_spin = Spin("My favorite color is {red|green|blue}{.|!}")

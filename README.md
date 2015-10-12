@@ -14,8 +14,8 @@ The Spintax is a widely used format for text generation in the SEO world. Thus, 
 	color_spin = Spin("path/to/my/masterspin/file")
 	
 	color_spin.unspun()
+And the possible results are:
 
-	# Possible results
 	My favorite color is red.
 	My favorite color is red!
 	My favorite color is green.

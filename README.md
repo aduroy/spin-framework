@@ -1,5 +1,5 @@
 # Spintax Framework
-The Spintax is a widely used format for text generation in the SEO world. Thus, here is some Python code for executing common operations on this format, such as basic spinning, etc.
+The Spintax is a widely used format for text generation (content spinning) in the SEO world. Thus, here is some Python code for executing common operations on this format, such as basic spinning, etc.
 
 ## Requirements
 - Python 2.7+

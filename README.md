@@ -57,7 +57,7 @@ And get:
 	__OR
 	____.
 	____!
-Get a JSON format:
+Print a JSON format:
 
 	print(tree.to_json())
 

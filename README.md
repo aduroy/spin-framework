@@ -2,7 +2,11 @@
 The Spintax is a widely used format for text generation (content spinning) in the SEO world. Thus, here is some Python code for executing common operations on this format, such as basic spinning, etc.
 
 ## Requirements
-- Python 2.7+
+- Python 3.4
+- Scipy 0.16.0
+- Numpy 1.10.0
+- NLTK 3.0.5
+- Matplotlib 1.4.3
 
 ## Code samples
 

@@ -13,7 +13,7 @@ The Spintax is a widely used format for text generation (content spinning) in th
 	# From file
 	color_spin = Spin(input_file="path/to/my/masterspin/file")
 	
-	color_spin.unspun()
+	color_spin.unspin()
 And the possible results are:
 
 	My favorite color is red.
@@ -22,3 +22,49 @@ And the possible results are:
 	My favorite color is green!
 	My favorite color is blue.
 	My favorite color is blue!
+
+### Build a tree representation
+
+	spin = Spin("{My name is|I{ am|'m}} John Doe and I {truly|really} love the {spintax|spin framework}{.|!}")
+	tree = spin.build_tree()
+Print it in console:
+
+	print(tree)
+
+And get:
+
+	AND
+	__OR
+	____My name is
+	____AND
+	______I
+	______OR
+	________ am
+	________'m
+	__ John Doe and I 
+	__OR
+	____truly
+	____really
+	__ love the 
+	__OR
+	____spintax
+	____spin framework
+	__OR
+	____.
+	____!
+Get a JSON format:
+
+	print(tree.to_json())
+
+And get:
+
+	{"and": [{"or": [{"value": "My name is"}, {"and": [{"value": "I"}, {"or": [{"value": " am"}, {"value": "'m"}]}]}]}, {"value": " John Doe and I "}, {"or": [{"value": "truly"}, {"value": "really"}]}, {"value": " love the "}, {"or": [{"value": "spintax"}, {"value": "spin framework"}]}, {"or": [{"value": "."}, {"value": "!"}]}]}
+
+Moreover, in order to reduce the chances of getting filtered by Google's Duplicate Content algorithm, you might want to visualize the limits of your masterspin. In other words, how many spuns can you generate before reaching a too high similarity between them? For this, several measures are provided, such as:
+* Jaccard similarity
+* Jaro-Winkler similarity
+* Cosine similarity
+
+For instance, by generating 25 spuns and comparing them 2 by 2, we can get the following charts:
+
+All of them show a limit around 14 generations until we get 100% duplication.

@@ -27,6 +27,11 @@ And the possible results are:
 
 	spin = Spin("{My name is|I{ am|'m}} John Doe and I {truly|really} love the {spintax|spin framework}{.|!}")
 	tree = spin.build_tree()
+
+This masterspin can be represented as a decision tree, such as:
+
+![Tree representation](https://github.com/aduroy/SpinFramework/blob/master/data/examples/tree.png)
+
 Print it in console:
 
 	print(tree)

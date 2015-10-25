@@ -67,6 +67,8 @@ Moreover, in order to reduce the chances of getting filtered by Google's Duplica
 
 For instance, by generating 25 spuns and comparing them 2 by 2, we can get the following charts:
 
+	spin.plot_duplicate_evolution(25)
+
 ![Plot representation](https://github.com/aduroy/SpinFramework/blob/master/data/results/plot_representation.png)
 
 All of them show a limit around 14 generations until we get 100% duplication.

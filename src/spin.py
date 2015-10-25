@@ -59,6 +59,8 @@ class Spin():
             perforations = a.group(1).split(delimiter)
             parent = SpinTree(or_=True)
             placeholder = '__NODE__'+str(random.randint(0, 10000))
+            while placeholder not in self.placeholders:
+                placeholder = '__NODE__'+str(random.randint(0, 10000))
             insert_index = -1
             for perfo in perforations:
                 s_perfo = [perfo]

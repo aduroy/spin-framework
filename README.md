@@ -78,7 +78,7 @@ For instance, by generating 25 spuns and comparing them 2 by 2, we can get the f
 
 	# Will display graphs
 	spin.plot_duplicate_evolution(25)
-	# Or save it a file
+	# Or save it to a file
 	spin.plot_duplicate_evolution(25, 'path/to/file.png')
 
 ![Plot representation](https://github.com/aduroy/SpinFramework/blob/master/data/results/plot_representation.png)

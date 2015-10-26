@@ -76,7 +76,7 @@ Moreover, in order to reduce the chances of getting filtered by Google's Duplica
 
 For instance, by generating 25 spuns and comparing them 2 by 2, we can get the following charts:
 
-	# Will display graphs
+	# Display graphs
 	spin.plot_duplicate_evolution(25)
 	# Or save it to a file
 	spin.plot_duplicate_evolution(25, 'path/to/file.png')

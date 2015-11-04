@@ -6,7 +6,7 @@ Created on 16 oct. 2015
 from collections import OrderedDict
 
 def insert_at_position(iterable, position, new_item):
-    """ Insert an item at a certain position in a Python OrderedDict an return
+    """ Insert an item at a certain position in a Python OrderedDict and return
     a new OrderedDict
     """
     if len(new_item) != 2:

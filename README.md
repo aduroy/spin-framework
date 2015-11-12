@@ -39,9 +39,9 @@ This masterspin can be represented as a decision tree, such as:
 ![Tree representation](https://github.com/aduroy/SpinFramework/blob/master/data/examples/tree.png)
 
 Print it in console:
-
+```python
 	print(tree)
-
+```
 And get:
 ```
 	AND

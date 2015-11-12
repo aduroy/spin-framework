@@ -73,7 +73,7 @@ And get:
 {"and": [{"or": [{"value": "My name is"}, {"and": [{"value": "I"}, {"or": [{"value": " am"}, {"value": "'m"}]}]}]}, {"value": " John Doe and I "}, {"or": [{"value": "truly"}, {"value": "really"}]}, {"value": " love the "}, {"or": [{"value": "spintax"}, {"value": "spin framework"}]}, {"or": [{"value": "."}, {"value": "!"}]}]}
 ```
 
-### Measures
+### Measurements
 Moreover, in order to reduce the chances of getting filtered by Google's Duplicate Content algorithm, you might want to visualize the limits of your masterspin. In other words, how many spuns can you generate before reaching a too high similarity between them? For this, several measures are provided, such as:
 * Jaccard similarity
 * Jaro-Winkler similarity
